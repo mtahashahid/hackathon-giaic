@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    padding: 2px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh; /* Full height of the screen */
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 40px;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.left img {
+    display: block;
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.right {
+    background-color: rgb(191, 191, 191);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.certifications,
+.objective,
+.socials {
+    margin-top: 24px;
+}
+
+h1 {
+    border-bottom: 1px solid rgb(110, 110, 110);
+    font-family: "Poppins", sans-serif;
+    text-align: start;
+}
+
+.skills li {
+    margin-left: 30px;
+    list-style-type: circle;
+}
+
+.socials li {
+    cursor: pointer;
+}
+
+.socials li a {
+    color: black;
+}
+
+.socials h1 {
+    margin-bottom: 24px;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+li {
+    margin-left: 10px;
+    list-style: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Responsive styles for tablet and mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .right {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+        gap: 20px;
+    }
+
+    .left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills li {
+        margin-left: 20px;
+    }
+}
