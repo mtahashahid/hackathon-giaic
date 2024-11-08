@@ -13,8 +13,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: 900px;
-    height: 100vh; /* Full height of the screen */
+    max-width: 1000px;
+    height: auto; /* Full height of the screen */
     margin: 0 auto;
     border: 2px solid black;
     border-radius: 6px;
@@ -65,7 +65,9 @@ h1 {
     margin-left: 30px;
     list-style-type: circle;
 }
-
+.margin-top{
+    margin-top: 10px;
+}
 .socials li {
     cursor: pointer;
 }
@@ -86,11 +88,23 @@ li {
     margin-left: 10px;
     list-style: none;
 }
-
 span {
     font-weight: bold;
 }
-
+#skills-list li.hidden {
+    display: none;
+  }
+  .toggleBtn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 2.5em;/* Global Styles */
+  }
+  .year{
+    display: flex;
+    justify-content: space-between;
+  }
 /* Responsive styles for tablet and mobile */
 @media (max-width: 768px) {
     .container {
